@@ -35,7 +35,7 @@ public class DenominationServiceTest {
         Assertions.assertNotNull(denom);
     }
 
-   // @Test
+    @Test
     public void nondoubleValue(){
         GetChange getChange=new GetChange();
         List<String> denom=getChange.getDenmination("46");

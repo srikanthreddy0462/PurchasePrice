@@ -77,7 +77,7 @@ public class IntegrationTest {
         ResponseEntity<AppResponse> response = null;
 
         response = getStatus("/get/denominations", totalPrice);
-        Assertions.assertNotNull( response.getBody().getMessage());
+        Assertions.assertNull( response.getBody().getMessage());
 
     }
 
